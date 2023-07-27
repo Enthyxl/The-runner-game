@@ -45,7 +45,12 @@ function draw() {
   boy.collide(leftBoundary);
   boy.collide(rightBoundary);
   
-  //code to reset the background
+ ground = createSprite(200,390,400,20);
+ground.addImage("ground",groundImage);
+ground.x = ground.width /2;
+ground.velocityX = -4; 
+invisibleGround = createSprite(200,400,400,20);
+invisibleGround.visible=false
   
   /*if(path.y > 400 ){
     path.y = height/2;
